@@ -1,0 +1,16 @@
+{
+    "type": "record",
+    "name": "User",
+    "namespace": "com.example",
+    "fields": [
+        {
+            "name": "name",
+            "doc": "Name of the user",
+            "type": "string"
+        },
+        {
+            "name" : "address",
+            "type" : "com.example.Address"
+        }
+    ]
+}

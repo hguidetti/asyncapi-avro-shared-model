@@ -1,0 +1,17 @@
+{
+    "type": "record",
+    "name": "Pet",
+    "namespace": "com.example",
+    "fields": [
+        {
+            "name": "nickname",
+            "doc": "Nickname of the pet",
+            "type":
+                "string"
+        },
+        {
+            "name" : "address",
+            "type" : "com.example.Address"
+        }
+    ]
+}
