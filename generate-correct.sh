@@ -1,0 +1,1 @@
+docker run --rm -it --user=root -v ${PWD}:/app asyncapi/cli generate fromTemplate -o /app/output /app/asyncapi-correct.yml @asyncapi/html-template@0.28.4 --force-write

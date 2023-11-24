@@ -1,0 +1,19 @@
+asyncapi: 2.6.0
+info:
+  title: Account Service
+  version: 1.0.0
+  description: This service is in charge of processing user signups
+
+channels:
+  user/signedup:
+    subscribe:
+      message:
+        $ref: '#/components/messages/UserSignedUp'
+  
+components:
+  messages:
+    UserSignedUp:
+      schemaFormat: 'application/vnd.apache.avro+json;version=1.9.0'
+      payload:
+        $ref: 'address.avsc'
+ 
